@@ -1,12 +1,10 @@
 {
-  "name": "assist",
+  "name": "ng.calculator",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --env=production",
-    "watch": "webpack -w --devtool=source-map",
-    "test": "karma start"
+    "dev": "webpack-dev-server --config=config/webpack.config.js"
   },
   "author": "thrbrd",
   "license": "ISC",
@@ -61,6 +59,7 @@
     "typescript": "2.1.4",
     "uglifyjs-webpack-plugin": "0.1.2",
     "webpack": "2.2.0",
+    "webpack-dev-server": "^2.4.1",
     "webpack-merge": "2.2.0",
     "wrapper-webpack-plugin": "0.1.11"
   }
