@@ -2,5 +2,6 @@ dist/
 !dist/index.html
 node_modules/
 .idea/
+ng.calculator.iml
 npm-debug.log
 .DS_Store
