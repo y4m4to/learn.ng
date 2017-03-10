@@ -1,5 +1,4 @@
-dist/
-!dist/index.html
+dist/*.js
 node_modules/
 .idea/
 ng.calculator.iml
