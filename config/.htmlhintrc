@@ -1,0 +1,13 @@
+{
+  "attr-value-double-quotes": true,
+  "id-unique": true,
+  "attr-no-duplication": true,
+  "tagname-lowercase": true,
+  "spec-char-escape": true,
+  "src-not-empty": true,
+  "id-class-value": "dash",
+  "inline-style-disabled": true,
+  "style-disabled": true,
+  "space-tab-mixed-disabled": "space",
+  "attr-unsafe-chars": true
+}
