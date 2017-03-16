@@ -4,9 +4,6 @@ import { StoreModule } from '@ngrx/store';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { BrowserModule } from '@angular/platform-browser';
 
-// Services
-import { CommonService } from './services/common.service';
-
 // App Component
 import { AppComponent } from './components/app/app.component';
 
@@ -23,9 +20,6 @@ import { rootReducer } from './states/root.reducer';
     BrowserModule,
     StoreModule.provideStore(rootReducer),
     StoreDevtoolsModule.instrumentStore()
-  ],
-  providers: [
-    CommonService
   ],
   declarations: [
     AppComponent,
