@@ -1,6 +1,10 @@
 import 'core-js/es6';
 import 'core-js/es7/reflect';
 import 'rxjs';
+import '@ngrx/core';
+import '@ngrx/store';
+import '@ngrx/store-devtools';
+import 'reselect';
 import 'zone.js/dist/zone';
 import '@angular/forms';
 import '@angular/platform-browser';

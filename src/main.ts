@@ -1,6 +1,7 @@
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { NgModule } from '@angular/core';
 import { StoreModule } from '@ngrx/store';
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { BrowserModule } from '@angular/platform-browser';
 
 // Services
@@ -20,7 +21,8 @@ import { rootReducer } from './states/root.reducer';
 @NgModule({
   imports: [
     BrowserModule,
-    StoreModule.provideStore(rootReducer)
+    StoreModule.provideStore(rootReducer),
+    StoreDevtoolsModule.instrumentStore()
   ],
   providers: [
     CommonService
