@@ -1,0 +1,14 @@
+$fgcolor-button: #0000FF;
+
+:host {
+  display: inline-block;
+
+  > a {
+    cursor: pointer;
+    color: $fgcolor-button;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

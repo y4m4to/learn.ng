@@ -3,7 +3,6 @@ var webpack = require('webpack');
 var precss = require('precss');
 var autoprefixer = require('autoprefixer');
 var smartImport = require('postcss-smart-import');
-var IconfontWebpackPlugin = require('iconfont-webpack-plugin');
 
 var PATH = {
   VENDOR: __dirname + '/../src/vendor.ts',
@@ -49,8 +48,7 @@ var plugins = [
       'main',
       'vendor'
     ]
-  }),
-  new IconfontWebpackPlugin()
+  })
 ];
 
 module.exports = {
@@ -76,7 +74,7 @@ module.exports = {
   },
   module: {
     exprContextCritical: false,
-    rules: [ {
+    rules: [{
         enforce: 'pre',
         test: /\.ts$/,
         loader: 'tslint-loader',
@@ -94,7 +92,7 @@ module.exports = {
       }, {
       test: /\.ts$/,
       use: [
-        'awesome-typescript-loader?{ configFileName: "config/tsconfig.json" }',
+        'awesome-typescript-loader',
         'angular2-template-loader'
       ]
     }, {

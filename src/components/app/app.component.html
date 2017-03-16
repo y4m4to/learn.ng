@@ -1,1 +1,41 @@
-calc
+<calc-text [calcText]="calcText$ | async"></calc-text>
+<calc-num-button [value]="1" [text]="calcText$ | async" [isFirstPush]="isFirstPush$ | async"></calc-num-button>
+<calc-num-button [value]="2" [text]="calcText$ | async" [isFirstPush]="isFirstPush$ | async"></calc-num-button>
+<calc-num-button [value]="3" [text]="calcText$ | async" [isFirstPush]="isFirstPush$ | async"></calc-num-button>
+<calc-num-button [value]="4" [text]="calcText$ | async" [isFirstPush]="isFirstPush$ | async"></calc-num-button>
+<calc-num-button [value]="5" [text]="calcText$ | async" [isFirstPush]="isFirstPush$ | async"></calc-num-button>
+<calc-num-button [value]="6" [text]="calcText$ | async" [isFirstPush]="isFirstPush$ | async"></calc-num-button>
+<calc-num-button [value]="7" [text]="calcText$ | async" [isFirstPush]="isFirstPush$ | async"></calc-num-button>
+<calc-num-button [value]="8" [text]="calcText$ | async" [isFirstPush]="isFirstPush$ | async"></calc-num-button>
+<calc-num-button [value]="9" [text]="calcText$ | async" [isFirstPush]="isFirstPush$ | async"></calc-num-button>
+<calc-num-button [value]="0" [text]="calcText$ | async" [isFirstPush]="isFirstPush$ | async"></calc-num-button>
+<calc-eval-button
+  [myMode]="'PLS'"
+  [ourMode]="ourMode$ | async"
+  [calcText]="calcText$ | async"
+  [count]="count$ | async"
+></calc-eval-button>
+<calc-eval-button
+  [myMode]="'MNS'"
+  [ourMode]="ourMode$ | async"
+  [calcText]="calcText$ | async"
+  [count]="count$ | async"
+></calc-eval-button>
+<calc-eval-button
+  [myMode]="'TIM'"
+  [ourMode]="ourMode$ | async"
+  [calcText]="calcText$ | async"
+  [count]="count$ | async"
+></calc-eval-button>
+<calc-eval-button
+  [myMode]="'DIV'"
+  [ourMode]="ourMode$ | async"
+  [calcText]="calcText$ | async"
+  [count]="count$ | async"
+></calc-eval-button>
+<calc-eval-button
+  [myMode]="'FIN'"
+  [ourMode]="ourMode$ | async"
+  [calcText]="calcText$ | async"
+  [count]="count$ | async"
+></calc-eval-button>

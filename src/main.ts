@@ -1,5 +1,6 @@
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
-import { NgModule, enableProdMode } from '@angular/core';
+import { NgModule } from '@angular/core';
+import { StoreModule } from '@ngrx/store';
 import { BrowserModule } from '@angular/platform-browser';
 
 // Services
@@ -9,24 +10,31 @@ import { CommonService } from './services/common.service';
 import { AppComponent } from './components/app/app.component';
 
 // Components
-import { ButtonComponent } from './components/button/button.component';
+import { NumberButtonComponent } from './components/number.button/number.button.component';
+import { EvalButtonComponent } from './components/eval.button/eval.button.component';
+import { TextComponent } from './components/text/text.component';
+
+// For states
+import { rootReducer } from './states/root.reducer';
 
 @NgModule({
   imports: [
-    BrowserModule
+    BrowserModule,
+    StoreModule.provideStore(rootReducer)
   ],
   providers: [
     CommonService
   ],
   declarations: [
     AppComponent,
-    ButtonComponent
+    NumberButtonComponent,
+    EvalButtonComponent,
+    TextComponent
   ],
   bootstrap: [
     AppComponent
   ]
 })
-export class NgCalculatorModule { }
+export class AppModule { }
 
-// enableProdMode();
-platformBrowserDynamic().bootstrapModule(NgCalculatorModule);
+platformBrowserDynamic().bootstrapModule(AppModule);
